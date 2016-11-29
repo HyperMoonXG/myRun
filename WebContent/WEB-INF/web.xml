@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+id="WebApp_ID" version="3.0">
+  <display-name>MyRun</display-name>
+  <welcome-file-list>
+ 	   <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 配置验证码的servlet -->
+  <servlet>
+  		<servlet-name>authImg</servlet-name>
+  		<servlet-class>com.briup.run.web.servlet.AuthImg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>authImg</servlet-name>
+  		<url-pattern>/authImg</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <!-- 配置filter
+ <filter>
+    <filter-name>filter</filter-name>
+    <filter-class>com.briup.run.web.filter.EncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>filter</filter-name>
+    <url-pattern>*.action</url-pattern>
+  </filter-mapping>
+   -->
+  
+ <!-- 编码过滤器 -->
+ <filter>
+    <filter-name>encodeFilter</filter-name>
+    <filter-class>com.briup.run.web.filter.EncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodeFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+ <!-- 登录过滤器 -->
+ <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.briup.run.web.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/member/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/messenger/*</url-pattern>
+  </filter-mapping> 
+ 
+  <!-- 配置struts2的主控器 -->
+ <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>*.action</url-pattern>
+  </filter-mapping>
+</web-app>

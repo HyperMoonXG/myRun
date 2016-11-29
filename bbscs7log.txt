@@ -1,0 +1,92 @@
+2016-11-14 14:44:30,549 [main] [org.hibernate.annotations.common.Version] [INFO] - Hibernate Commons Annotations 3.2.0.Final
+2016-11-14 14:44:30,558 [main] [org.hibernate.cfg.Environment] [INFO] - Hibernate 3.6.10.Final
+2016-11-14 14:44:30,560 [main] [org.hibernate.cfg.Environment] [INFO] - hibernate.properties not found
+2016-11-14 14:44:30,564 [main] [org.hibernate.cfg.Environment] [INFO] - Bytecode provider name : javassist
+2016-11-14 14:44:30,570 [main] [org.hibernate.cfg.Environment] [INFO] - using JDK 1.4 java.sql.Timestamp handling
+2016-11-14 14:44:30,638 [main] [org.hibernate.cfg.Configuration] [INFO] - configuring from resource: /hibernate.cfg.xml
+2016-11-14 14:44:30,639 [main] [org.hibernate.cfg.Configuration] [INFO] - Configuration resource: /hibernate.cfg.xml
+2016-11-14 14:44:30,705 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,740 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Blackrecord.hbm.xml
+2016-11-14 14:44:30,833 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,875 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Friendrecord.hbm.xml
+2016-11-14 14:44:30,880 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,905 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Graderecord.hbm.xml
+2016-11-14 14:44:30,909 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,931 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Memberinfo.hbm.xml
+2016-11-14 14:44:30,934 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,950 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Memberspace.hbm.xml
+2016-11-14 14:44:30,956 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,970 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Messagerecord.hbm.xml
+2016-11-14 14:44:30,982 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:30,999 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Pointaction.hbm.xml
+2016-11-14 14:44:31,007 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:31,021 [main] [org.hibernate.cfg.Configuration] [INFO] - Reading mappings from resource : com/briup/run/common/bean/Pointrecord.hbm.xml
+2016-11-14 14:44:31,032 [main] [org.hibernate.util.DTDEntityResolver] [WARN] - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-14 14:44:31,047 [main] [org.hibernate.cfg.Configuration] [INFO] - Configured SessionFactory: null
+2016-11-14 14:44:31,095 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Blackrecord -> BLACKRECORD
+2016-11-14 14:44:31,103 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Friendrecord -> FRIENDRECORD
+2016-11-14 14:44:31,104 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Graderecord -> GRADERECORD
+2016-11-14 14:44:31,108 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Memberinfo -> MEMBERINFO
+2016-11-14 14:44:31,116 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Memberspace -> MEMBERSPACE
+2016-11-14 14:44:31,118 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Messagerecord -> MESSAGERECORD
+2016-11-14 14:44:31,119 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Pointaction -> POINTACTION
+2016-11-14 14:44:31,121 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping class: com.briup.run.common.bean.Pointrecord -> POINTRECORD
+2016-11-14 14:44:31,124 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.briup.run.common.bean.Graderecord.memberinfos -> MEMBERINFO
+2016-11-14 14:44:31,128 [main] [org.hibernate.cfg.HbmBinder] [INFO] - Mapping collection: com.briup.run.common.bean.Pointaction.pointrecords -> POINTRECORD
+2016-11-14 14:44:31,135 [main] [org.hibernate.cfg.Configuration] [INFO] - Hibernate Validator not found: ignoring
+2016-11-14 14:44:31,139 [main] [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] [INFO] - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-11-14 14:44:31,147 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Using Hibernate built-in connection pool (not for production use!)
+2016-11-14 14:44:31,147 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - Hibernate connection pool size: 20
+2016-11-14 14:44:31,147 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - autocommit mode: false
+2016-11-14 14:44:31,277 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:XE
+2016-11-14 14:44:31,278 [main] [org.hibernate.connection.DriverManagerConnectionProvider] [INFO] - connection properties: {user=alan, password=****}
+2016-11-14 14:44:31,856 [main] [org.hibernate.dialect.Dialect] [INFO] - Using dialect: org.hibernate.dialect.Oracle10gDialect
+2016-11-14 14:44:31,883 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Database ->
+       name : Oracle
+    version : Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+      major : 11
+      minor : 2
+2016-11-14 14:44:31,884 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.3.0
+      major : 11
+      minor : 2
+2016-11-14 14:44:31,885 [main] [org.hibernate.transaction.TransactionFactoryFactory] [INFO] - Using default transaction strategy (direct JDBC transactions)
+2016-11-14 14:44:31,887 [main] [org.hibernate.transaction.TransactionManagerLookupFactory] [INFO] - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-11-14 14:44:31,887 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic flush during beforeCompletion(): disabled
+2016-11-14 14:44:31,888 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Automatic session close at end of transaction: disabled
+2016-11-14 14:44:31,888 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC batch size: 15
+2016-11-14 14:44:31,888 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC batch updates for versioned data: disabled
+2016-11-14 14:44:31,889 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Scrollable result sets: enabled
+2016-11-14 14:44:31,889 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JDBC3 getGeneratedKeys(): disabled
+2016-11-14 14:44:31,889 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Connection release mode: auto
+2016-11-14 14:44:31,890 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default batch fetch size: 1
+2016-11-14 14:44:31,890 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Generate SQL with comments: disabled
+2016-11-14 14:44:31,891 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL updates by primary key: disabled
+2016-11-14 14:44:31,891 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Order SQL inserts for batching: disabled
+2016-11-14 14:44:31,891 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-11-14 14:44:31,893 [main] [org.hibernate.hql.ast.ASTQueryTranslatorFactory] [INFO] - Using ASTQueryTranslatorFactory
+2016-11-14 14:44:31,894 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query language substitutions: {}
+2016-11-14 14:44:31,894 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - JPA-QL strict compliance: disabled
+2016-11-14 14:44:31,894 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Second-level cache: enabled
+2016-11-14 14:44:31,895 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Query cache: disabled
+2016-11-14 14:44:31,895 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2016-11-14 14:44:31,897 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Optimize cache for minimal puts: disabled
+2016-11-14 14:44:31,897 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Structured second-level cache entries: disabled
+2016-11-14 14:44:31,900 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Echoing all SQL to stdout
+2016-11-14 14:44:31,901 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Statistics: disabled
+2016-11-14 14:44:31,901 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Deleted entity synthetic identifier rollback: disabled
+2016-11-14 14:44:31,901 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Default entity-mode: pojo
+2016-11-14 14:44:31,901 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Named query checking : enabled
+2016-11-14 14:44:31,901 [main] [org.hibernate.cfg.SettingsFactory] [INFO] - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2016-11-14 14:44:31,924 [main] [org.hibernate.impl.SessionFactoryImpl] [INFO] - building session factory
+2016-11-14 14:44:31,932 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@619713e5
+2016-11-14 14:44:31,934 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@708f5957
+2016-11-14 14:44:31,935 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@68999068
+2016-11-14 14:44:31,935 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [blob] overrides previous : org.hibernate.type.BlobType@7722c3c3
+2016-11-14 14:44:31,935 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7722c3c3
+2016-11-14 14:44:31,935 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@2ef3eef9
+2016-11-14 14:44:31,935 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [clob] overrides previous : org.hibernate.type.ClobType@243c4f91
+2016-11-14 14:44:31,936 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@243c4f91
+2016-11-14 14:44:31,936 [main] [org.hibernate.type.BasicTypeRegistry] [INFO] - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@291ae
+2016-11-14 14:44:32,298 [main] [org.hibernate.impl.SessionFactoryObjectFactory] [INFO] - Not binding factory to JNDI, no JNDI name configured

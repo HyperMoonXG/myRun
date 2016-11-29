@@ -1,0 +1,103 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.action.extension" value="action"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation"  value="true"></constant>
+	<constant name="struts.multipart.maxSize"  value="209715200"></constant>
+	
+	<package name="test" extends="struts-default">
+		<!-- 用户注册 -->
+		<action name="registerAction" class="com.briup.run.web.action.RegisterAction">
+			<result name="success">/member/activity.jsp</result>
+			<result name="error">/register.jsp</result>
+		</action>
+		
+		<!-- 用户登录 -->
+		<action name="loginAction" class="com.briup.run.web.action.LoginAction">
+			<result name="success">/member/activity.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		
+		<!-- 检查自动登录 -->
+		<action name="CheckAutoLoginAction" class="com.briup.run.web.action.CheckAutoLoginAction">
+			<result name="success">/member/activity.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+	</package>
+	
+	<package name="member" extends="struts-default" namespace="/member">
+		
+		<!-- 修改资料 -->
+		<action name="ModifyAction" class="com.briup.run.web.action.ModifyAction">
+			<result name="success">/member/activity.jsp</result>
+			<result name="error">/member/modify.jsp</result>
+		</action>
+		
+		<!-- 忘记密码 -->
+		<action name="ForgetPasswdAction" class="com.briup.run.web.action.ForgetPasswdAction">
+			<result name="success">/login.jsp</result>
+			<result name="error">/passwd_missing.jsp</result>
+		</action>
+		
+		<!-- 创建空间 -->
+		<action name="CreateSpace" class="com.briup.run.web.action.CreateSpace">
+			<result name="success">/member/space.jsp</result>
+			<result name="error">/member/createSpace.jsp</result>
+		</action>
+	</package>
+	
+	<package name="messenger" extends="struts-default" namespace="/messenger">
+		<!-- 列出所有会员 -->
+		<action name="listMembers" class="com.briup.run.web.action.FriendAction" method="listMembers">
+			<result>/messenger/memberList.jsp</result>
+		</action>
+		<!-- 添加好友 -->
+		<action name="addFriend" class="com.briup.run.web.action.FriendAction" method="addFriend">
+			<result type="chain">listFriends</result>
+			<result name="error" type="chain">listMembers</result>
+		</action>
+		<!-- 列出好友 -->
+		<action name="listFriends" class="com.briup.run.web.action.FriendAction" method="listFriends">
+			<result >buddyList.jsp</result>
+		</action>
+		<!-- 速配好友 -->
+		<action name="matchFriend" class="com.briup.run.web.action.FriendAction" method="matchFriend">
+			<result >/messenger/matchFriend.jsp</result>
+		</action>
+		<!-- 速配页面显示所有会员 -->
+		<action name="listMembers2" class="com.briup.run.web.action.FriendAction" method="listMembers">
+			<result >/messenger/matchFriend.jsp</result>
+		</action>
+		<!-- 随机匹配 -->
+		<action name="randMatchFriend" class="com.briup.run.web.action.FriendAction" method="randMatchFriend">
+			<result >/messenger/matchFriend.jsp</result>
+		</action>
+		
+		<!-- 列出黑名单 -->
+		<action name="blackList" class="com.briup.run.web.action.FriendAction" method="blackList">
+			<result >/messenger/blackList.jsp</result>
+		</action>
+		<!-- 添加到黑名单 -->
+		<action name="moveToBlack" class="com.briup.run.web.action.FriendAction" method="moveToBlack">
+			<result  type="chain">blackList</result>
+		</action>
+		<!-- 删除好友 -->
+		<action name="deleteBuddy" class="com.briup.run.web.action.FriendAction" method="deleteBuddy">
+			<result  type="chain">listFriends</result>
+		</action>
+		<!-- 移出黑名单 -->
+		<action name="deleleBlack" class="com.briup.run.web.action.FriendAction" method="deleleBlack">
+			<result  type="chain">blackList</result>
+		</action>
+		<!-- 发送信息 -->
+		<action name="sendInfo" class="com.briup.run.web.action.MessagesAction" method="sendInfo">
+			<result >/messenger/outbox.jsp</result>
+		</action>
+		
+	</package>
+		
+
+</struts>
